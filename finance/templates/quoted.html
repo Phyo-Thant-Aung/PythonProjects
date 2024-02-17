@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <p>One share of {{ item.name }} currently costs {{ usd_function(item.price) }}.</p>
+{% endblock %}
